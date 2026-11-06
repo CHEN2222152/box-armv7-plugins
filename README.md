@@ -30,11 +30,17 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 - Python Spider 插件
 - Python 运行时
 - QuickJS Spider 插件
-- YouTube 播放插件
+- YouTube 播放插件（纯 Java APK 宿主）
+- Legado 书源插件（纯 Java APK 服务宿主）
 
-Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。
+运行时与 Node.js Spider：
 
-其余播放器、Node、PHP、GoProxy、迅雷等条目在完成对应 armv7 源码重编前保持“待 armv7 重编”。
+- Node.js 运行时为 Node.js Mobile 18.20.4 的 armv7 构建。
+- Cat Spider、drpyS Spider、洛雪音源通过纯 Java APK 宿主加载，依赖 Node.js 运行时。
+- PHP 运行时为基于 PHP 8.2.35 源码构建的 armv7 基础 CLI；PHP Spider 在 curl、DOM、mbstring 补齐前仍不可用。
+
+Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。其余带 arm64 native
+依赖的官方插件仍保持“待 armv7 重编”。
 
 ## ZIP 插件发布
 
