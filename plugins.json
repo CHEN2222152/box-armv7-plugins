@@ -95,10 +95,13 @@
       "name": "Legado 书源插件",
       "type": "service",
       "versionName": "1.0.3",
-      "description": "阅读书源转 T4 小说服务，依赖原配 APK 插件宿主。",
-      "provider": "official-apk",
-      "abi": "any",
-      "compatibility": "requires-apk-host",
+      "description": "阅读书源转 T4 小说服务，使用内置纯 Java APK 插件宿主。",
+      "provider": "official-apk-java",
+      "abi": "java",
+      "compatibility": "available",
+      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/legado.apk",
+      "mainClass": "bh.box.plugin.legado.LegadoPlugin",
+      "sha256": "F4A45E259551618B7FEA8287FFC0CA80E3B3BFAEFEA5DC63F4117664DCB4F630",
       "officialUrl": "https://h-box-release.netlify.app/release/plugins/legado.apk"
     },
     {
