@@ -42,6 +42,17 @@ foreach ($item in $market.plugins) {
                 $errors.Add("$($item.id): official-apk requires officialUrl")
             }
         }
+        "official-apk-java" {
+            if ([string]::IsNullOrWhiteSpace($item.downloadUrl)) {
+                $errors.Add("$($item.id): official-apk-java requires downloadUrl")
+            }
+            if ([string]::IsNullOrWhiteSpace($item.mainClass)) {
+                $errors.Add("$($item.id): official-apk-java requires mainClass")
+            }
+            if ([string]::IsNullOrWhiteSpace($item.sha256)) {
+                $errors.Add("$($item.id): official-apk-java requires sha256")
+            }
+        }
         default {
             $errors.Add("$($item.id): unknown provider $provider")
         }
@@ -56,4 +67,5 @@ if ($errors.Count -gt 0) {
 $builtin = @($market.plugins | Where-Object { $_.provider -eq "builtin" }).Count
 $bundle = @($market.plugins | Where-Object { $_.provider -eq "bundle" }).Count
 $official = @($market.plugins | Where-Object { $_.provider -eq "official-apk" }).Count
-Write-Host "OK: total=$($market.plugins.Count), builtin=$builtin, bundle=$bundle, official-apk=$official"
+$officialJava = @($market.plugins | Where-Object { $_.provider -eq "official-apk-java" }).Count
+Write-Host "OK: total=$($market.plugins.Count), builtin=$builtin, bundle=$bundle, official-apk=$official, official-apk-java=$officialJava"

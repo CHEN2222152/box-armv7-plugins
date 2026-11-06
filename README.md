@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 - `builtin`: 已由 armv7 TV 包内置实现，可立即使用。
 - `bundle`: 市场托管的 ZIP 配置插件，必须提供 `downloadUrl`。
 - `official-apk`: 官方原包仅用于兼容性展示，不下载、不伪装为可执行。
+- `official-apk-java`: 纯 Java 官方 APK，由宿主下载、校验并通过 DexClassLoader 加载。
 
 当前内置可用项：
 
@@ -29,6 +30,7 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 - Python Spider 插件
 - Python 运行时
 - QuickJS Spider 插件
+- YouTube 播放插件
 
 Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。
 

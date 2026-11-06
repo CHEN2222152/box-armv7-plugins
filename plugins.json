@@ -242,10 +242,13 @@
       "name": "YouTube 播放插件",
       "type": "extractor",
       "versionName": "1.2.0",
-      "description": "YouTube DASH 播放适配，依赖原配 APK 插件宿主。",
-      "provider": "official-apk",
+      "description": "纯 Java YouTube 播放适配，由本包 APK 插件宿主加载并解析 DASH。",
+      "provider": "official-apk-java",
+      "mainClass": "bh.box.plugin.extractor.youtube.YoutubeExtractorPlugin",
       "abi": "any",
-      "compatibility": "requires-apk-host",
+      "compatibility": "available",
+      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/youtube.apk",
+      "sha256": "BA30EB2C3FDACE3A8B2A4DE59C7B997D01E91B2278F9D2D4B56A073E5CEF9BD0",
       "officialUrl": "https://h-box-release.netlify.app/release/plugins/youtube.apk"
     }
   ]
