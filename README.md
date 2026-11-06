@@ -1,0 +1,78 @@
+# 宝盒 armv7 插件仓库
+
+这是传统 TVBox / 宝盒 armv7 测试包的在线插件市场仓库，不包含官方
+`tv.box.bh`、`tv.box.bh.mb` 或官方 64 位插件 APK。
+
+## 入口
+
+GitHub Pages 地址：
+
+```text
+https://<GITHUB_USER>.github.io/box-armv7-plugins/plugins.json
+```
+
+GitHub raw 地址：
+
+```text
+https://raw.githubusercontent.com/<GITHUB_USER>/box-armv7-plugins/main/plugins.json
+```
+
+把上述地址填入 TV 的“设置 -> 插件中心 -> 插件市场地址”，点击“加载市场”即可。
+
+## 当前清单
+
+清单包含官方手机版 3.8.7 的 20 个原配分类项，并明确记录 armv7 兼容状态：
+
+- `builtin`: 已由 armv7 TV 包内置实现，可立即使用。
+- `bundle`: 市场托管的 ZIP 配置插件，必须提供 `downloadUrl`。
+- `official-apk`: 官方原包仅用于兼容性展示，不下载、不伪装为可执行。
+
+当前内置可用项：
+
+- AliYunPlayer
+- EXO Player
+- IJK Player
+- Python Spider 插件
+- Python 运行时
+- QuickJS Spider 插件
+
+Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。
+
+其余播放器、Node、PHP、GoProxy、迅雷等条目在完成对应 armv7 源码重编前保持“待 armv7 重编”。
+
+## ZIP 插件发布
+
+`bundle` 插件必须包含 `plugin.json`，否则安装后会报“插件缺少配置”。
+
+建议把 ZIP 放在 GitHub Releases，并在清单中填写：
+
+```json
+{
+  "id": "codex.armv7.example",
+  "name": "示例插件",
+  "type": "config",
+  "versionName": "1.0.0",
+  "description": "示例",
+  "provider": "bundle",
+  "abi": "any",
+  "compatibility": "available",
+  "downloadUrl": "https://github.com/<USER>/box-armv7-plugins/releases/download/v1.0.0/example.zip",
+  "config": "plugin.json",
+  "sha256": "<ZIP_SHA256>"
+}
+```
+
+客户端会校验 `sha256`，不匹配时删除下载文件并拒绝安装。
+
+## 发布流程
+
+1. 在 GitHub 创建 `box-armv7-plugins` 仓库。
+2. 推送本目录。
+3. 在仓库 Settings -> Pages 中选择 `Deploy from a branch`，分支 `main`，目录 `/root`。
+4. 大文件不要直接提交到 Git，放到 Releases。
+5. 修改 `plugins.json` 后运行 `scripts/validate-market.ps1`。
+
+## 分发边界
+
+官方插件包未提供源码和明确再分发许可，本仓库不上传其 APK 或反编译产物。
+带 native 的插件只能发布基于有许可源码的 armv7 重编版本，并使用独立 ID。
