@@ -172,8 +172,8 @@
       "officialId": "bh.box.plugin.php",
       "name": "PHP 运行时",
       "type": "runtime",
-      "versionName": "1.1.0",
-      "description": "PHP 8.2.35 armv7 基础 CLI，内置服务器可用；curl/DOM/mbstring 扩展待补。",
+      "versionName": "1.1.0-armv7-full",
+      "description": "PHP 8.2.35 armv7 CLI，含 curl/mbedTLS、DOM、mbstring 和 zlib。",
       "provider": "official-apk-java",
       "abi": "java",
       "compatibility": "available",
@@ -182,7 +182,7 @@
         "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/runtime/runtime-armv7-20261106/php-armv7.apk"
       ],
       "mainClass": "bh.box.plugin.php.PhpRuntimePlugin",
-      "sha256": "F709D02BA9E76464704C63CE092055E3244FB8DFECC1DC4E24727CD842EDAD9A",
+      "sha256": "658900F7F507D4B0263A24B6F89439DF6777B5E75D811274041A7E06B0CF282E",
       "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk"
     },
     {
@@ -191,10 +191,13 @@
       "name": "PHP Spider 插件",
       "type": "spider",
       "versionName": "1.1.1",
-      "description": "支持 PHP T3 Spider，需等 armv7 PHP 的 curl/DOM/mbstring 扩展完成。",
-      "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "requires-arm64-runtime",
+      "description": "支持 PHP T3 Spider，使用本包 armv7 PHP 8.2.35 运行时。",
+      "provider": "official-apk-java",
+      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/phpspider.apk",
+      "mainClass": "bh.box.plugin.phpspider.PhpSpiderPlugin",
+      "sha256": "134E65654EDCED9DE372B35876D49CA52DED55709FDA30EABD537CF1A77EEABD",
+      "abi": "java",
+      "compatibility": "available",
       "officialUrl": "https://h-box-release.netlify.app/release/plugins/phpspider.apk"
     },
     {

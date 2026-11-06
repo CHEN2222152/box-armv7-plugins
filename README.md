@@ -37,7 +37,8 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 
 - Node.js 运行时为 Node.js Mobile 18.20.4 的 armv7 构建。
 - Cat Spider、drpyS Spider、洛雪音源通过纯 Java APK 宿主加载，依赖 Node.js 运行时。
-- PHP 运行时为基于 PHP 8.2.35 源码构建的 armv7 基础 CLI；PHP Spider 在 curl、DOM、mbstring 补齐前仍不可用。
+- PHP 运行时为基于 PHP 8.2.35 源码构建的 armv7 CLI，包含 curl/mbedTLS、DOM、mbstring 和 zlib。
+- PHP Spider 通过纯 Java APK 宿主加载，依赖 PHP 运行时。
 
 Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。其余带 arm64 native
 依赖的官方插件仍保持“待 armv7 重编”。
