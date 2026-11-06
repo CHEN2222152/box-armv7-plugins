@@ -160,6 +160,9 @@
       "abi": "java",
       "compatibility": "available",
       "downloadUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/node-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/runtime/runtime-armv7-20261106/node-armv7.apk"
+      ],
       "mainClass": "bh.box.plugin.node.NodeRuntimePlugin",
       "sha256": "A7D5C300884D49C96178C475181D5FAD3578F1668AC2A4A1C535628E94FF026B",
       "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/node-armv7.apk"
@@ -175,6 +178,9 @@
       "abi": "java",
       "compatibility": "available",
       "downloadUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/runtime/runtime-armv7-20261106/php-armv7.apk"
+      ],
       "mainClass": "bh.box.plugin.php.PhpRuntimePlugin",
       "sha256": "F709D02BA9E76464704C63CE092055E3244FB8DFECC1DC4E24727CD842EDAD9A",
       "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk"

@@ -66,6 +66,9 @@ Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版
 
 客户端会校验 `sha256`，不匹配时删除下载文件并拒绝安装。
 
+下载器会依次尝试 `downloadUrl` 和 `downloadUrls`，保留未完成的 `.part` 文件并
+使用 HTTP Range 续传；每个源失败后会自动重试，全部完成后才进行 SHA256 校验。
+
 ## 发布流程
 
 1. 在 GitHub 创建 `box-armv7-plugins` 仓库。

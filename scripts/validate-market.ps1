@@ -57,6 +57,13 @@ foreach ($item in $market.plugins) {
             $errors.Add("$($item.id): unknown provider $provider")
         }
     }
+
+    $urls = @($item.downloadUrl) + @($item.downloadUrls)
+    foreach ($url in $urls) {
+        if (-not [string]::IsNullOrWhiteSpace($url) -and $url -notmatch '^https?://') {
+            $errors.Add("$($item.id): download URL must use http(s): $url")
+        }
+    }
 }
 
 if ($errors.Count -gt 0) {
