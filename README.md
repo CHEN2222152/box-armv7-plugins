@@ -5,13 +5,7 @@
 
 ## 入口
 
-GitHub Pages 地址：
-
-```text
-https://chen2222152.github.io/box-armv7-plugins/plugins.json
-```
-
-GitHub raw 地址：
+插件中心使用 GitHub raw 地址：
 
 ```text
 https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.json
@@ -68,9 +62,11 @@ Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版
 
 1. 在 GitHub 创建 `box-armv7-plugins` 仓库。
 2. 推送本目录。
-3. 在仓库 Settings -> Pages 中选择 `Deploy from a branch`，分支 `main`，目录 `/root`。
-4. 大文件不要直接提交到 Git，放到 Releases。
-5. 修改 `plugins.json` 后运行 `scripts/validate-market.ps1`。
+3. 大文件不要直接提交到 Git，放到 Releases。
+4. 修改 `plugins.json` 后运行 `scripts/validate-market.ps1`。
+
+如需 GitHub Pages，需要仓库管理员先在 Settings -> Pages 中手动启用一次，再使用
+`https://chen2222152.github.io/box-armv7-plugins/plugins.json`。
 
 ## 分发边界
 
