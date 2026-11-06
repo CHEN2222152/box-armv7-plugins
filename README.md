@@ -8,13 +8,13 @@
 GitHub Pages 地址：
 
 ```text
-https://<GITHUB_USER>.github.io/box-armv7-plugins/plugins.json
+https://chen2222152.github.io/box-armv7-plugins/plugins.json
 ```
 
 GitHub raw 地址：
 
 ```text
-https://raw.githubusercontent.com/<GITHUB_USER>/box-armv7-plugins/main/plugins.json
+https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.json
 ```
 
 把上述地址填入 TV 的“设置 -> 插件中心 -> 插件市场地址”，点击“加载市场”即可。
