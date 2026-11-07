@@ -5,6 +5,10 @@ param(
     [string]$FfmpegJniV7 = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\gradle-home\caches\transforms-3\0058c35432cb1e29f88ea422398c4896\transformed\jetified-lib-decoder-ffmpeg-release\jni\armeabi-v7a\libffmpegJNI.so',
     [string]$Media3ExtV7 = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\gradle-home\caches\transforms-3\19a9ecc4ddc170ff2d793645f24c9021\transformed\jetified-nextlib-media3ext-0.7.1\jni\armeabi-v7a',
     [string]$MpvV7Dir = 'D:\codex1\project-036-tvwall-mpv-player\src\app\src\main\jniLibs\armeabi-v7a',
+    [string]$MdkSdkV7Dir = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\mdk-android-upstream\sdk\src\main\cpp\mdk-sdk\lib\armeabi-v7a',
+    [string]$MdkJniV7 = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\mdk-armv7-jni\out\libmdk-jni.so',
+    [string]$RedPlayerV7Dir = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\redplayer-armv7-libs',
+    [string]$Armv7LibCpp = 'D:\Android-Sdk\ndk\28.2.13676358\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\lib\arm-linux-androideabi\libc++_shared.so',
     [string]$RuntimeDir = 'D:\codex1\project-053-宝盒手机版TV版对比\artifacts\box-armv7-plugins\runtime\runtime-armv7-20261106',
     [string]$RepoRoot = 'D:\codex1\project-053-宝盒手机版TV版对比\artifacts\box-armv7-plugins',
     [string]$RawBase = 'https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7'
@@ -173,10 +177,38 @@ $generated += Convert-Plugin `
     }
 
 $generated += Convert-Plugin `
+    -SourceName 'mdkplayer.apk' `
+    -OutputName 'mdkplayer-armv7.apk' `
+    -Libraries @{
+        'libass.so' = (Join-Path $MdkSdkV7Dir 'libass.so')
+        'libdav1d.so' = (Join-Path $MdkSdkV7Dir 'libdav1d.so')
+        'libffmpeg.so' = (Join-Path $MdkSdkV7Dir 'libffmpeg.so')
+        'libmdk.so' = (Join-Path $MdkSdkV7Dir 'libmdk.so')
+        'libmdk-jni.so' = $MdkJniV7
+        'libc++_shared.so' = $Armv7LibCpp
+    }
+
+$generated += Convert-Plugin `
     -SourceName 'qjsspider.apk' `
     -OutputName 'qjsspider-armv7.apk' `
     -Libraries @{
         'libquickjs-android-wrapper.so' = (Join-Path $originalV7 'libquickjs-android-wrapper.so')
+    }
+
+$generated += Convert-Plugin `
+    -SourceName 'redplayer.apk' `
+    -OutputName 'redplayer-armv7.apk' `
+    -Libraries @{
+        'libc++_shared.so' = (Join-Path $RedPlayerV7Dir 'libc++_shared.so')
+        'libffmpeg.so' = (Join-Path $RedPlayerV7Dir 'libffmpeg.so')
+        'libredbase.so' = (Join-Path $RedPlayerV7Dir 'libredbase.so')
+        'libreddecoder.so' = (Join-Path $RedPlayerV7Dir 'libreddecoder.so')
+        'libreddownload.so' = (Join-Path $RedPlayerV7Dir 'libreddownload.so')
+        'libredplayer.so' = (Join-Path $RedPlayerV7Dir 'libredplayer.so')
+        'libredpreload.so' = (Join-Path $RedPlayerV7Dir 'libredpreload.so')
+        'libredrender.so' = (Join-Path $RedPlayerV7Dir 'libredrender.so')
+        'libredsource.so' = (Join-Path $RedPlayerV7Dir 'libredsource.so')
+        'libredstrategycenter.so' = (Join-Path $RedPlayerV7Dir 'libredstrategycenter.so')
     }
 
 $chaquopyAssetMap = @{}

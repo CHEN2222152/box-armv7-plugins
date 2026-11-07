@@ -173,11 +173,17 @@
       "name": "MDK Player",
       "type": "player",
       "versionName": "1.0.0",
-      "description": "MDK 视频播放引擎，官方包仅含 arm64 原生库。",
-      "provider": "official-apk",
+      "description": "MDK 视频播放引擎，已重编 armv7 JNI 并配套官方 armv7 SDK。",
       "officialUrl": "https://h-box-release.netlify.app/release/plugins/mdkplayer.apk",
-      "compatibility": "needs-armv7-rebuild",
-      "abi": "arm64-v8a"
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/mdkplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/mdkplayer-armv7.apk"
+      ],
+      "sha256": "0C45217A4D26E8591F022381631492560BFC52A1F0E0A3BE5961CC824DEC711B",
+      "mainClass": "bh.box.plugin.mdk.MdkPlugin"
     },
     {
       "id": "codex.armv7.official.mpv",
@@ -308,11 +314,17 @@
       "name": "RedPlayer",
       "type": "player",
       "versionName": "1.2.0",
-      "description": "小红书 REDPlayer 播放引擎，官方包仅含 arm64 原生库。",
-      "provider": "official-apk",
+      "description": "小红书 REDPlayer 播放引擎，已由开源 REDPlayer 源码重编 armv7。",
       "officialUrl": "https://h-box-release.netlify.app/release/plugins/redplayer.apk",
-      "compatibility": "needs-armv7-rebuild",
-      "abi": "arm64-v8a"
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/redplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/redplayer-armv7.apk"
+      ],
+      "sha256": "6613679AB47F395D3EEFAF3A8AC6C64EA5EF9CAAFA93F6E44072AF62E2961727",
+      "mainClass": "bh.box.plugin.red.RedPlugin"
     },
     {
       "id": "codex.armv7.official.thunder",
