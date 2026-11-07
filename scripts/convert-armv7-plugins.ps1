@@ -9,6 +9,7 @@ param(
     [string]$MdkJniV7 = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\mdk-armv7-jni\out\libmdk-jni.so',
     [string]$RedPlayerV7Dir = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\redplayer-armv7-libs',
     [string]$Armv7LibCpp = 'D:\Android-Sdk\ndk\28.2.13676358\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\lib\arm-linux-androideabi\libc++_shared.so',
+    [string]$PythonRuntimeZip = 'D:\codex1\project-053-宝盒手机版TV版对比\tmp\chaquopy38-armv7-runtime-20261107.zip',
     [string]$RuntimeDir = 'D:\codex1\project-053-宝盒手机版TV版对比\artifacts\box-armv7-plugins\runtime\runtime-armv7-20261106',
     [string]$RepoRoot = 'D:\codex1\project-053-宝盒手机版TV版对比\artifacts\box-armv7-plugins',
     [string]$RawBase = 'https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7'
@@ -209,6 +210,13 @@ $generated += Convert-Plugin `
         'libredrender.so' = (Join-Path $RedPlayerV7Dir 'libredrender.so')
         'libredsource.so' = (Join-Path $RedPlayerV7Dir 'libredsource.so')
         'libredstrategycenter.so' = (Join-Path $RedPlayerV7Dir 'libredstrategycenter.so')
+    }
+
+$generated += Convert-Plugin `
+    -SourceName 'python.apk' `
+    -OutputName 'python-armv7.apk' `
+    -Assets @{
+        'assets/python.zip' = $PythonRuntimeZip
     }
 
 $chaquopyAssetMap = @{}

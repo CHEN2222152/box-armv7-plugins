@@ -281,13 +281,17 @@
       "officialId": "bh.box.plugin.python",
       "name": "Python 运行时",
       "type": "runtime",
-      "versionName": "Chaquopy 3.8",
-      "description": "使用本包内置的 armv7 Python 3.8，不是官方 arm64 Python 3.12 包。",
-      "provider": "builtin",
-      "builtin": "python-runtime",
+      "versionName": "3.8.13-armv7",
+      "description": "旧版 Chaquopy Python 3.8.13 armv7 独立运行时，包含 requests、bs4、lxml、Crypto 和 pyquery。",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "查看"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/python-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/python-armv7.apk"
+      ],
+      "sha256": "31A978FC517D180C1010FAE6716191427011F6117E0F33B8A258A6D0022AEC2B",
+      "mainClass": "bh.box.plugin.python.PythonRuntimePlugin"
     },
     {
       "id": "codex.armv7.builtin.qjsspider",

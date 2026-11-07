@@ -22,12 +22,11 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 - `official-apk`: 官方原包仅用于兼容性展示，不下载、不伪装为可执行。
 - `official-apk-java`: 纯 Java 官方 APK，由宿主下载、校验并通过 DexClassLoader 加载。
 
-当前 armv7 转换结果：19 项 APK 已落到 `plugins/armv7/`，1 项继续使用原包内置 Python：
+当前 armv7 转换结果：20 项 APK 已落到 `plugins/armv7/`：
 
 - 已转换：AliYunPlayer、Cat Spider、drpyS、EXO、GoProxy、IJK、荐片、Legado、
-  MDK、洛雪音源、MPV、Node、PHP、PHP Spider、Python Spider、QuickJS Spider、
-  RedPlayer、迅雷、YouTube
-- 内置：Python 运行时使用原宝盒 Chaquopy 3.8
+  MDK、洛雪音源、MPV、Node、PHP、PHP Spider、Python Spider、Python 运行时、
+  QuickJS Spider、RedPlayer、迅雷、YouTube
 
 每个转换包都在 `plugins/armv7/SHA256SUMS.txt` 和 `CONVERTED.csv` 中记录哈希。
 所有已生成 `lib/` 和 assets ELF 都经过检查，为 `ELF32 / ARM`。
@@ -39,8 +38,9 @@ https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins.jso
 - PHP 运行时为基于 PHP 8.2.35 源码构建的 armv7 CLI，包含 curl/mbedTLS、DOM、mbstring 和 zlib。
 - PHP Spider 通过纯 Java APK 宿主加载，依赖 PHP 运行时。
 
-Python 项只在 Python 版 TV 包中可用；Java 版会显示需要 Python 版。官方 Python 3.12
-仍是 AArch64 包，当前由宝盒内置的 Chaquopy Python 3.8 兼容运行。
+Python 运行时使用旧版 Chaquopy Python 3.8.13 armv7 独立 CLI，包含 requests、bs4、
+lxml、Crypto 和 pyquery。官方 Python 3.12 仍是 AArch64 包，Chaquopy 从 3.12 起也已
+停止提供 armv7。
 
 ## ZIP 插件发布
 
