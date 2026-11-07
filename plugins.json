@@ -9,11 +9,17 @@
       "type": "player",
       "versionName": "内置适配",
       "description": "使用本包内置的阿里云播放器 armv7 能力，不下载官方 64 位 APK。",
-      "provider": "builtin",
       "builtin": "player-ali",
+      "actionLabel": "启用",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "启用"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/aliplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/aliplayer-armv7.apk"
+      ],
+      "sha256": "998D96802ECBB0EBFBD67D289ABF9E3B720C1F6350E219BA2EA2875F4C01F399",
+      "mainClass": "bh.box.plugin.ali.AliPlugin"
     },
     {
       "id": "codex.armv7.official.catspider",
@@ -22,13 +28,16 @@
       "type": "spider",
       "versionName": "1.1.7",
       "description": "支持 CatVodOpen nodejs T3 源，使用本包 armv7 Node.js 18 运行时。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/catspider.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/catspider.apk",
-      "mainClass": "bh.box.plugin.catspider.CatSpiderPlugin",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/catspider-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/catspider-armv7.apk"
+      ],
       "sha256": "26C0F624E5E8D5E32FEA95AA270195508FA399E9F2E5CC51AF0F05AA806F42C8",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/catspider.apk"
+      "mainClass": "bh.box.plugin.catspider.CatSpiderPlugin"
     },
     {
       "id": "codex.armv7.official.drpysspider",
@@ -37,13 +46,16 @@
       "type": "spider",
       "versionName": "1.0.1",
       "description": "支持 drpyS 和 drpy-node T3 源，使用本包 armv7 Node.js 18 运行时。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/drpysspider.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/drpysspider.apk",
-      "mainClass": "bh.box.plugin.drpysspider.DrpysSpiderPlugin",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/drpysspider-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/drpysspider-armv7.apk"
+      ],
       "sha256": "5C2B57429D2BB5E4E53582FD4EAFE8E377D37C113968A3DA4C2EE9533B084E9B",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/drpysspider.apk"
+      "mainClass": "bh.box.plugin.drpysspider.DrpysSpiderPlugin"
     },
     {
       "id": "codex.armv7.builtin.exo",
@@ -52,11 +64,17 @@
       "type": "player",
       "versionName": "内置适配",
       "description": "使用本包内置的 Media3 ExoPlayer armv7 能力，可直接切换为默认播放器。",
-      "provider": "builtin",
       "builtin": "player-exo",
+      "actionLabel": "启用",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "启用"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/exoplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/exoplayer-armv7.apk"
+      ],
+      "sha256": "EF892EF885060BED1312392C294A32978962657FBCA5CD714CCC7B3A0233F9D0",
+      "mainClass": "bh.box.plugin.exo.ExoPlugin"
     },
     {
       "id": "codex.armv7.official.goproxy",
@@ -65,10 +83,16 @@
       "type": "service",
       "versionName": "1.2.0",
       "description": "GoProxy 代理播放服务，官方包内含 AArch64 可执行文件。",
-      "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/goproxy.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/goproxy.apk",
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/goproxy-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/goproxy-armv7.apk"
+      ],
+      "sha256": "6E5819464348316C2437E71ABC8D963E1DFDD22AD28A69E2525271B4E2D26E6B",
+      "mainClass": "bh.box.plugin.goproxy.GoProxyPlugin"
     },
     {
       "id": "codex.armv7.builtin.ijk",
@@ -77,11 +101,17 @@
       "type": "player",
       "versionName": "内置适配",
       "description": "使用本包内置的 IJK armv7 原生库，可直接切换为默认播放器。",
-      "provider": "builtin",
       "builtin": "player-ijk",
+      "actionLabel": "启用",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "启用"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/ijkplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/ijkplayer-armv7.apk"
+      ],
+      "sha256": "A33465E9EF29CB3C2572914D5E52FA0E8B35D0BDD7EE739A0179B8EC996E735D",
+      "mainClass": "bh.box.plugin.ijk.IjkPlugin"
     },
     {
       "id": "codex.armv7.official.jianpian",
@@ -90,10 +120,16 @@
       "type": "extractor",
       "versionName": "1.2.0",
       "description": "支持荐片和 P2P 边下边播协议，官方包仅含 arm64 原生库。",
-      "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/jianpian.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/jianpian.apk",
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/jianpian-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/jianpian-armv7.apk"
+      ],
+      "sha256": "AF91C95E4C87D12096443B4F748D4EC22B47D249D66EB0EF765C614665FC7671",
+      "mainClass": "bh.box.plugin.extractor.jianpian.JianPianExtractorPlugin"
     },
     {
       "id": "codex.armv7.official.legado",
@@ -102,13 +138,16 @@
       "type": "service",
       "versionName": "1.0.3",
       "description": "阅读书源转 T4 小说服务，使用内置纯 Java APK 插件宿主。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/legado.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/legado.apk",
-      "mainClass": "bh.box.plugin.legado.LegadoPlugin",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/legado-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/legado-armv7.apk"
+      ],
       "sha256": "F4A45E259551618B7FEA8287FFC0CA80E3B3BFAEFEA5DC63F4117664DCB4F630",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/legado.apk"
+      "mainClass": "bh.box.plugin.legado.LegadoPlugin"
     },
     {
       "id": "codex.armv7.official.lxmusic",
@@ -117,13 +156,16 @@
       "type": "spider",
       "versionName": "1.0.0",
       "description": "洛雪自定义源脚本转 T3 音乐源，使用本包 armv7 Node.js 18 运行时。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/lxmusic.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/lxmusic.apk",
-      "mainClass": "bh.box.plugin.lxmusic.LxMusicPlugin",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/lxmusic-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/lxmusic-armv7.apk"
+      ],
       "sha256": "A071823AF80D9BE113903DC3017B682D110A9D7A3245E5DBBB5B7D632933D687",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/lxmusic.apk"
+      "mainClass": "bh.box.plugin.lxmusic.LxMusicPlugin"
     },
     {
       "id": "codex.armv7.official.mdk",
@@ -133,9 +175,9 @@
       "versionName": "1.0.0",
       "description": "MDK 视频播放引擎，官方包仅含 arm64 原生库。",
       "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/mdkplayer.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/mdkplayer.apk",
+      "compatibility": "needs-armv7-rebuild",
+      "abi": "arm64-v8a"
     },
     {
       "id": "codex.armv7.official.mpv",
@@ -144,10 +186,16 @@
       "type": "player",
       "versionName": "1.2.2",
       "description": "高性能 MPV 播放引擎，官方包仅含 arm64 原生库。",
-      "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/mpvplayer.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/mpvplayer.apk",
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/mpvplayer-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/mpvplayer-armv7.apk"
+      ],
+      "sha256": "E15EB9CF0FE946BDB0C9D5B988877111ED458BB117CDC9459ED7B50FD22CDC0B",
+      "mainClass": "bh.box.plugin.mpv.MpvPlugin"
     },
     {
       "id": "codex.armv7.official.node",
@@ -156,16 +204,16 @@
       "type": "runtime",
       "versionName": "1.1.0",
       "description": "Node.js 18.20.4 armv7 运行时，基于 Node.js Mobile 官方 libnode.so。",
+      "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/node-armv7.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/node-armv7.apk",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/node-armv7.apk",
       "downloadUrls": [
-        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/runtime/runtime-armv7-20261106/node-armv7.apk"
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/node-armv7.apk"
       ],
-      "mainClass": "bh.box.plugin.node.NodeRuntimePlugin",
       "sha256": "A7D5C300884D49C96178C475181D5FAD3578F1668AC2A4A1C535628E94FF026B",
-      "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/node-armv7.apk"
+      "mainClass": "bh.box.plugin.node.NodeRuntimePlugin"
     },
     {
       "id": "codex.armv7.official.php",
@@ -174,16 +222,16 @@
       "type": "runtime",
       "versionName": "1.1.0-armv7-full",
       "description": "PHP 8.2.35 armv7 CLI，含 curl/mbedTLS、DOM、mbstring 和 zlib。",
+      "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk",
       "provider": "official-apk-java",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/php-armv7.apk",
       "downloadUrls": [
-        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/runtime/runtime-armv7-20261106/php-armv7.apk"
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/php-armv7.apk"
       ],
-      "mainClass": "bh.box.plugin.php.PhpRuntimePlugin",
       "sha256": "658900F7F507D4B0263A24B6F89439DF6777B5E75D811274041A7E06B0CF282E",
-      "officialUrl": "https://github.com/CHEN2222152/box-armv7-plugins/releases/download/runtime-armv7-20261106/php-armv7.apk"
+      "mainClass": "bh.box.plugin.php.PhpRuntimePlugin"
     },
     {
       "id": "codex.armv7.official.phpspider",
@@ -192,13 +240,16 @@
       "type": "spider",
       "versionName": "1.1.1",
       "description": "支持 PHP T3 Spider，使用本包 armv7 PHP 8.2.35 运行时。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/phpspider.apk",
       "provider": "official-apk-java",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/phpspider.apk",
-      "mainClass": "bh.box.plugin.phpspider.PhpSpiderPlugin",
-      "sha256": "134E65654EDCED9DE372B35876D49CA52DED55709FDA30EABD537CF1A77EEABD",
-      "abi": "java",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/phpspider.apk"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/phpspider-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/phpspider-armv7.apk"
+      ],
+      "sha256": "134E65654EDCED9DE372B35876D49CA52DED55709FDA30EABD537CF1A77EEABD",
+      "mainClass": "bh.box.plugin.phpspider.PhpSpiderPlugin"
     },
     {
       "id": "codex.armv7.builtin.pyspider",
@@ -207,11 +258,17 @@
       "type": "spider",
       "versionName": "1.1.0 兼容",
       "description": "使用内置 Chaquopy Python 3.8 armv7 运行 T3 Python Spider。",
-      "provider": "builtin",
       "builtin": "python-spider",
+      "actionLabel": "查看",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "查看"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/pyspider-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/pyspider-armv7.apk"
+      ],
+      "sha256": "1611F0CDC6614F9FE4F5E0EFA01918D472D917A351F795AE062D5D3E2994C3A5",
+      "mainClass": "bh.box.plugin.pyspider.PySpiderPlugin"
     },
     {
       "id": "codex.armv7.builtin.python",
@@ -233,11 +290,17 @@
       "type": "spider",
       "versionName": "1.2.2 兼容",
       "description": "使用本包内置的 QuickJS armv7 运行时加载 JS Spider。",
-      "provider": "builtin",
       "builtin": "quickjs-spider",
+      "actionLabel": "查看",
+      "provider": "official-apk-java",
       "abi": "armeabi-v7a",
       "compatibility": "available",
-      "actionLabel": "查看"
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/qjsspider-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/qjsspider-armv7.apk"
+      ],
+      "sha256": "7999D99C2EAEBBCF40661D84003E0B47B350F6E586FED0948340726FD0E19A0F",
+      "mainClass": "bh.box.plugin.qjsspider.QjsSpiderPlugin"
     },
     {
       "id": "codex.armv7.official.red",
@@ -247,9 +310,9 @@
       "versionName": "1.2.0",
       "description": "小红书 REDPlayer 播放引擎，官方包仅含 arm64 原生库。",
       "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/redplayer.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/redplayer.apk",
+      "compatibility": "needs-armv7-rebuild",
+      "abi": "arm64-v8a"
     },
     {
       "id": "codex.armv7.official.thunder",
@@ -258,10 +321,16 @@
       "type": "extractor",
       "versionName": "1.2.0",
       "description": "迅雷磁力和种子边下边播，官方包仅含 arm64 原生库。",
-      "provider": "official-apk",
-      "abi": "arm64-v8a",
-      "compatibility": "official-arm64",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/thunder.apk"
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/thunder.apk",
+      "provider": "official-apk-java",
+      "abi": "armeabi-v7a",
+      "compatibility": "available",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/thunder-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/thunder-armv7.apk"
+      ],
+      "sha256": "438B89AEB5E20C82A2285B4BBEAC463A8F9F6F3EBCC32B1FB4BAA38C7E6664EC",
+      "mainClass": "bh.box.plugin.extractor.thunder.ThunderExtractorPlugin"
     },
     {
       "id": "codex.armv7.official.youtube",
@@ -270,13 +339,18 @@
       "type": "extractor",
       "versionName": "1.2.0",
       "description": "纯 Java YouTube 播放适配，由本包 APK 插件宿主加载并解析 DASH。",
+      "officialUrl": "https://h-box-release.netlify.app/release/plugins/youtube.apk",
       "provider": "official-apk-java",
-      "mainClass": "bh.box.plugin.extractor.youtube.YoutubeExtractorPlugin",
-      "abi": "any",
+      "abi": "armeabi-v7a",
       "compatibility": "available",
-      "downloadUrl": "https://h-box-release.netlify.app/release/plugins/youtube.apk",
+      "downloadUrl": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/youtube-armv7.apk",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/youtube-armv7.apk"
+      ],
       "sha256": "BA30EB2C3FDACE3A8B2A4DE59C7B997D01E91B2278F9D2D4B56A073E5CEF9BD0",
-      "officialUrl": "https://h-box-release.netlify.app/release/plugins/youtube.apk"
+      "mainClass": "bh.box.plugin.extractor.youtube.YoutubeExtractorPlugin"
     }
-  ]
+  ],
+  "generatedAt": "2026-11-07",
+  "convertedArmv7Base": "https://raw.githubusercontent.com/CHEN2222152/box-armv7-plugins/main/plugins/armv7/"
 }
